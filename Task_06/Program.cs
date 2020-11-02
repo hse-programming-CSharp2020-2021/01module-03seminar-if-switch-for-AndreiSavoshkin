@@ -33,7 +33,7 @@ namespace Task_06
 
         static void Main(string[] args)
         {
-            int answer = int.MaxValue;
+            int answer = 99;
 
             foreach (int level in GetNumbers())
             {

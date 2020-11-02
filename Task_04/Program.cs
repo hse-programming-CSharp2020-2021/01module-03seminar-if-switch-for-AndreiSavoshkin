@@ -35,7 +35,10 @@ namespace Task_04 {
 	class Program {
 		static void Main(string[] args) {
             CultureInfo.CurrentCulture = new CultureInfo("ru-RU");
-            double x = double.Parse(Console.ReadLine()), y = double.Parse(Console.ReadLine());
+            double x;
+            x = double.Parse(Console.ReadLine());
+            double y;
+            y = double.Parse(Console.ReadLine());
             Console.WriteLine(G(x, y).ToString("F2", CultureInfo.GetCultureInfo("ru-RU")));
             Console.ReadLine();
 		}

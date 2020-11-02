@@ -29,24 +29,29 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Task_05 {
-	class Program {
-		static void Main(string[] args) {
-			CultureInfo.CurrentCulture = new CultureInfo("ru-RU");
-			double x = double.Parse(Console.ReadLine());
-			Console.WriteLine(G(x).ToString("F2", CultureInfo.GetCultureInfo("ru-RU")));
+namespace Task_05
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            CultureInfo.CurrentCulture = new CultureInfo("ru-RU");
+            double x;
+            x = double.Parse(Console.ReadLine());
+            Console.WriteLine(G(x).ToString("F2", CultureInfo.GetCultureInfo("ru-RU")));
 
-		}
+        }
 
-		public static double G(double x) {
-			if (x <= 0.5)
-			{
-				return Math.Sin(Math.PI / 2);
-			}
-			else
-			{
-				return Math.Sin(Math.PI * (x - 1) / 2);
-			}
-		}
-	}
+        public static double G(double x)
+        {
+            if (x <= 0.5)
+            {
+                return Math.Sin(Math.PI / 2);
+            }
+            else
+            {
+                return Math.Sin(Math.PI * (x - 1) / 2);
+            }
+        }
+    }
 }

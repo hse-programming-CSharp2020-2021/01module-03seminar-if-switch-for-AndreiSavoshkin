@@ -29,7 +29,8 @@ namespace Task_02
     {
         static void Main(string[] args)
         {
-            int x = int.Parse(Console.ReadLine());
+            int x;
+            x = int.Parse(Console.ReadLine());
             Console.WriteLine(ReverseNumber(x));
         }
 

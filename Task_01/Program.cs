@@ -30,9 +30,10 @@ namespace Task_01
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            int l = int.Parse(Console.ReadLine());
+            int l;
+            l = int.Parse(Console.ReadLine());
             int result = CalcS(l);
             if (result == -1)
             {

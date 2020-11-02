@@ -35,7 +35,10 @@ namespace Task_03
         static void Main()
         {
             CultureInfo.CurrentCulture = new CultureInfo("ru-RU");
-            double x = double.Parse(Console.ReadLine()), y = double.Parse(Console.ReadLine());
+            double x;
+            x = double.Parse(Console.ReadLine());
+            double y;
+            y = double.Parse(Console.ReadLine());
             Console.WriteLine(G(x, y));
         }
         public static bool G(double x, double y)
