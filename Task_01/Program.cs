@@ -26,26 +26,39 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Task_01 {
-	class Program {
-		static void Main(string[] args) {
-			int l;
-			// TODO : Считать l;
+namespace Task_01
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int l = int.Parse(Console.ReadLine());
+            int result = CalcS(l);
+            if (result == -1)
+            {
+                Console.WriteLine("0");
+            }
+            else
+            {
+                Console.WriteLine(result);
+            }
+        }
 
-			int result = CalcS(l);
+        public static int CalcS(int l)
+        {
+            int res = -1;
+            int element = l++;
+            while (element < 10000)
+            {
+                element += l++;
+                if (element % 100 == element / 100 && element / 1000 == element % 10)
+                {
+                    return element;
+                }
+            }
+            return res;
+        }
 
-			// TODO : вывести результат или 0, если его не было получено.
-		}
 
-		public static int CalcS(int l) {
-			int res = -1;
-
-			// TODO : Написать логику для метода вычисления S и 
-			// если вычислить удалось, поместить в res полученное S.
-
-			return res;
-		}
-
-
-	}
+    }
 }

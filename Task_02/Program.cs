@@ -23,17 +23,26 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Task_02 {
-	class Program {
-		static void Main(string[] args) {
-			int x;
-			// TODO : Ввести X.
+namespace Task_02
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int x = int.Parse(Console.ReadLine());
+            Console.WriteLine(ReverseNumber(x));
+        }
 
-			Console.WriteLine(Reverse(x));
-		}
-
-		public static int Reverse(int x) {
-			// TODO : Описать логику метода для получения нового числа.
-		}
-	}
+        static int ReverseNumber(int number)
+        {
+            var revNumber = 0;
+            int count = number.ToString().Length - 1;
+            while (number > 0)
+            {
+                revNumber += (number % 10) * (int)Math.Pow(10, count--);
+                number /= 10;
+            }
+            return revNumber;
+        }
+    }
 }

@@ -23,29 +23,28 @@
 
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Task_03 {
-	class Program {
-		static void Main(string[] args) {
-			// TODO : Сменить локаль для ввода чисел с плавующей точкой.
-
-			double x, y;
-			// TODO : Считать координаты точки.
-
-
-			Console.WriteLine(G(x,y));
-
-		}
-
-		public static bool G(double x, double y) {
-			bool res = false;
-
-			// TODO : Реализовать вычисление функции G.
-
-			return res;
-		}
-	}
+namespace Task_03
+{
+    class Program
+    {
+        static void Main()
+        {
+            CultureInfo.CurrentCulture = new CultureInfo("ru-RU");
+            double x = double.Parse(Console.ReadLine()), y = double.Parse(Console.ReadLine());
+            Console.WriteLine(G(x, y));
+        }
+        public static bool G(double x, double y)
+        {
+            double R = 2;
+            double p = Math.Sqrt(x * x + y * y);
+            double cosq = x / p;
+            bool angle = cosq >= 0 ? (cosq >= 1 / Math.Sqrt(2)) : (cosq > 0);
+            return (p <= R) && (cosq >= 0) && angle;
+        }
+    }
 }

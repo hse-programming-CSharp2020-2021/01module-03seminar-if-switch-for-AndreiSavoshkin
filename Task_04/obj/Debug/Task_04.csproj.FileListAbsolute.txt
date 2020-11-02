@@ -1,0 +1,7 @@
+D:\Программки на вижуал\Hometask_3\Task_04\bin\Debug\Task_04.exe.config
+D:\Программки на вижуал\Hometask_3\Task_04\bin\Debug\Task_04.exe
+D:\Программки на вижуал\Hometask_3\Task_04\bin\Debug\Task_04.pdb
+D:\Программки на вижуал\Hometask_3\Task_04\obj\Debug\Task_04.csprojAssemblyReference.cache
+D:\Программки на вижуал\Hometask_3\Task_04\obj\Debug\Task_04.csproj.CoreCompileInputs.cache
+D:\Программки на вижуал\Hometask_3\Task_04\obj\Debug\Task_04.exe
+D:\Программки на вижуал\Hometask_3\Task_04\obj\Debug\Task_04.pdb
