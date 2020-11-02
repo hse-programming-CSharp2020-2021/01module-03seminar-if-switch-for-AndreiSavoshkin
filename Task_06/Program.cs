@@ -41,6 +41,10 @@ namespace Task_06
                 {
                     answer = level;
                 }
+                else if (answer % 100 == level % 100)
+                {
+                    answer = answer / 100 < level / 100 ? answer : level;
+                }
             }
             Console.WriteLine(answer);
         }

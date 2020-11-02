@@ -43,6 +43,7 @@ namespace Task_01
             {
                 Console.WriteLine(result);
             }
+            Console.ReadLine();
         }
 
         public static int CalcS(int l)
