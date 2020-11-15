@@ -42,12 +42,14 @@ namespace Task_04 {
             Console.WriteLine(G(x, y).ToString("F2", CultureInfo.GetCultureInfo("ru-RU")));
             Console.ReadLine();
 		}
-        public static double G(double x, double y) {
-            if ((x < y) && (x > 0))
+        public static double G(double x, double y) 
+        {
+            double eps = 0.00001;
+            if ((y - x > eps) && (x > eps))
             {
                 return x + Math.Sin(y);
             }
-            else if ((x > y) && (x < 0))
+            else if ((x - y > eps) && (x < eps))
             {
                 return y - Math.Cos(x);
             }

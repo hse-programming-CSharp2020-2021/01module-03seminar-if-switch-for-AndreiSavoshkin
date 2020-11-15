@@ -43,7 +43,6 @@ namespace Task_01
             {
                 Console.WriteLine(result);
             }
-            Console.ReadLine();
         }
 
         public static int CalcS(int l)
@@ -53,7 +52,8 @@ namespace Task_01
             while (element < 10000)
             {
                 element += l++;
-                if (element % 100 == element / 100 && element / 1000 == element % 10)
+                string number = element.ToString();
+                if (element > 1000 && number[0] == number[1] && number[2] == number[3] && number[3] == number[0])
                 {
                     return element;
                 }
