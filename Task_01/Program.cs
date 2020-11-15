@@ -43,16 +43,17 @@ namespace Task_01
             {
                 Console.WriteLine(result);
             }
-            Console.WriteLine(l);
+            Console.ReadLine();
         }
 
         public static int CalcS(int l)
         {
             int res = -1;
-            int element = l++;
+            int element = l;
+            int count = 1;
             while (element < 10000)
             {
-                element += l++;
+                element += l + count++;
                 string number = element.ToString();
                 if (element > 1000 && number[0] == number[1] && number[2] == number[3] && number[3] == number[0])
                 {
