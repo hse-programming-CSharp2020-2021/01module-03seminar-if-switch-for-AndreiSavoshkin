@@ -39,6 +39,7 @@ namespace Task_04 {
             x = double.Parse(Console.ReadLine());
             double y;
             y = double.Parse(Console.ReadLine());
+            Console.WriteLine($"{x} {y}");
             Console.WriteLine(G(x, y).ToString("F2", CultureInfo.GetCultureInfo("ru-RU")));
             Console.ReadLine();
 		}

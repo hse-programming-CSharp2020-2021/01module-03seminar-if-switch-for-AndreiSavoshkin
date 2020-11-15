@@ -40,6 +40,8 @@ namespace Task_03
             double y;
             y = double.Parse(Console.ReadLine());
             Console.WriteLine(G(x, y));
+            Console.WriteLine(x);
+            Console.WriteLine(y);
         }
         public static bool G(double x, double y)
         {
